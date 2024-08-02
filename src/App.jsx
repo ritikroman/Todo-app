@@ -41,7 +41,14 @@ const App = () => {
       <Navbar />
       <TodoForm addTask={addTask} />
       <TodoList todo={todo} deleteTask={deleteTask} />
-      <ToastContainer position="top-right" theme="dark" />
+      <ToastContainer position="top-right"  theme="purple" progressClassName="custom-progress-bar"  toastStyle={{
+          border: '2px solid #000',
+          // backgroundColor: '#fff',
+          color: '#333',
+          padding: '10px',
+          borderRadius: '8px'
+          
+        }}/>
     </>
   );
 };
